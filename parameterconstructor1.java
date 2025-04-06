@@ -12,6 +12,9 @@ public class parameterconstructor1 {
 		System.out.println(E.name +" has salary "+E.salary+" "+E.IsMale+" leaves at address "+E.Address);
 		System.out.println(E2.name+ " has salary " + E2.salary);
 		
+		E.eat();
+		E2.walk();
+		
 	}
 
 }
@@ -36,5 +39,11 @@ class Employee
 	Employee(String name,long salary){
 		this.name = name;
 		this.salary = salary;
+	}
+	void eat() {
+		System.out.println(this.name + " is eat NonVeg");
+	}
+	void walk() {
+		System.out.println(this.Address + " its very far away");
 	}
 }
